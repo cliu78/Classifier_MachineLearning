@@ -1,0 +1,9 @@
+@relation AccuracyVsN_2
+@attribute 10 numeric
+@attribute 30 numeric
+@attribute 50 numeric
+@attribute 70 numeric
+@attribute 90 numeric
+@data
+100.0,87.5,85.04672897196262,83.89261744966443,85.41666666666667
+56.994818652849744,60.0,63.55140186915888,64.61538461538461,68.18181818181819

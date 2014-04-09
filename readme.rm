@@ -1,0 +1,37 @@
+Classifier_MachineLearning
+==========================
+use JAVA and the weka API 
+General Classification 
+--------------------------
+Use the MultilayerPerceptron classifier (use the default configuration that is set by the no argument constructor) and the dataset glass.arff. for example   
+a) Train the classifier on the first N percent of instances. The testing data will be the last 100-N percent of the instances.     
+    i) For each N={10,30,50,70,90} report the accuracy of the classifier over the training data and the accuracy over the testing data.     
+    ii) Plot accuracy on training data vs. N and accuracy on testing data vs. N on the same plot   
+b) Use n-fold cross validation to evaluate the accuracy (as a percentage) of the classifier over the dataset. 
+    Do this for n={2,5,10,15,20}. Hint: The Evaluation class in weka can do cross validation.     
+    i) Plot the accuracy vs n.     
+    ii) Plot the time taken by cross validation vs. n.
+    
+SVM
+-------------------------
+use the glass.arff dataset for this problem as example and 10-fold cross validation. 
+Train the classifier for each of the following kernel functions and report the obtained accuracy (as a percentage). 
+Note that the class used in weka for the SVM classifier is called “SMO”. Use PolyKernel class.
+  i) Linear or string kernel.
+  ii) Homogeneous quadratic kernel.
+  iii) Nonhomogeneous quadratic kernel.
+  iv) Homogeneous cubic kernel.
+  
+  
+Neural Networks
+-------------------------
+use the glass.arff dataset for this problem and 10-fold cross validation. 
+Try 4 substantially different Neural Network topologies with varying depth and compare the resulting accuracies. 
+Describe the topologies
+Method: use the MultilayerPerceptron class for this.
+Bagging
+-------------------------
+a) Repeat Problem 3 part a using the bagging technique discussed in lecture and
+compare the results to those in 3a.
+b) Determine experimentally whether the bagging technique helps avoid
+overfitting in this case. 
